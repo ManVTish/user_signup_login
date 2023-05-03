@@ -1,0 +1,5 @@
+<%= @user.username %>, <%= @user.email %>
+<% flash.each do |type, msg| %>
+  <p> <%= msg %> </p>
+<% end %>
+<%= button_to "Log out", session_path, method: :delete %>
